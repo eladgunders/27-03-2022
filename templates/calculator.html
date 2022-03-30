@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calc</title>
+    <script src="{{ url_for('static', filename='js/index.js')}}"></script>
+</head>
+<body>
+    <p>X: <input type="number" id="x_txt" /></p>
+    <p>Y: <input type="number" id="y_txt" /></p>
+    <p>SUM: <input type="number" id="sum_txt" /></p>
+    <p><button onclick="generate_numbers()">Get X and Y</button></p>
+    <p><button onclick="check_sum()">Check</button></p>
+    <hr>
+    <div id="result" style="font-weight:bold;"></div>
+</body>
+</html>
